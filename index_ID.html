@@ -152,7 +152,7 @@ The above copyright notice and this permission notice shall be included in all c
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="icon">
-                    <img rel="tooltip" title="" style="cursor:pointer;" onclick="samples();" data-original-title="Klik Wouᴉʞɐ untuk melihat sampel yang ada (tapi masih belum selesai :( ) !" src="./assets/img/mon/5.png"/>
+                    <img rel="tooltip" title="" style="cursor:pointer;" onclick="samplesid();" data-original-title="Klik Wouᴉʞɐ untuk melihat sampel yang ada (tapi masih belum selesai :( ) !" src="./assets/img/mon/5.png"/>
                   </div>
                   <h3 class="card-title">Pencair Ide</h3>
                   <div class="card-body">
@@ -178,7 +178,7 @@ The above copyright notice and this permission notice shall be included in all c
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="icon">
-                    <img rel="tooltip" title="" style="cursor:pointer;" onclick="asset();" data-original-title="Klik Wouᴉʞɐ ini untuk memeriksa daftar website yang menyediakan gambar latar gratis !" src="./assets/img/mon/6.png"/>
+                    <img rel="tooltip" title="" style="cursor:pointer;" onclick="assetid();" data-original-title="Klik Wouᴉʞɐ ini untuk memeriksa daftar website yang menyediakan gambar latar gratis !" src="./assets/img/mon/6.png"/>
                   </div>
                   <h3 class="card-title">Suasana</h3>
                   <div class="card-body">
@@ -237,7 +237,7 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li>
-            <a href="#" onclick="tentang();">
+            <a href="#" onclick="tentangid();">
               Tentang Proyek Ini
             </a>
           </li>
@@ -266,24 +266,6 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="./assets/js/bootbox.all.js" type="text/javascript"></script>    
   <script src="./assets/js/cookie.js" type="text/javascript"></script>
   <script>
-  function asset(){
-	var weba = ['https://itch.io/game-assets/free/tag-background','https://opengameart.org/content/background-art-collection','https://www.gamedevmarket.net/category/2d/backgrounds/?type=free','https://bevouliin.com/tag/game-backgrounds/','https://www.gameartguppy.com/product-category/game-art-background-sprites/'];
-	var webt = ['itch.io','OpenGameArt.org','GameDev Market','Bevouliin','GameArtGuppy'];
-	var btn = ['btn-primary','btn-info','btn-success','btn-warning','btn-danger','btn-rose',''];
-	var isi=''; 
-	var idx=0;
-	for(i=0;i<webt.length;i++){
-	idx = Math.floor(Math.random() * 7);  
-	  isi = isi+'<button title="Klik untuk membuka halaman '+webt[i]+'" class="btn '+btn[idx]+' btn-small" style="cursor:pointer;" onclick="window.open(\''+weba[i]+'\');">'+webt[i]+'</button>';
-	}
-	bootbox.alert({title:'Suasana / Gambar Latar',message:'<p style="font-family:\'playtime\' !important;">'+isi+'<p>',size:'large'});
-  }
-  function samples(){
-    bootbox.alert({title:'Pencair Ide / Sampel Cerita',message:'<p style="font-family:\'playtime\' !important;">Maaf, tapi sampel cerita masih dalam proses pembuatan oleh tim kami.<br>Meski disebutkan \'sederhana\' tapi tak se-sederhana itu, mengingat ini juga mencakup pengetahuan dasar perinta-perintah yang ada !</p>'});
-  }
-  function tentang(){
-    bootbox.alert({title:'Tentang MoniChat',message:'<h4 style="font-family:\'playtime\' !important;">Nama berikut ini adalah orang-orang yang terlibat dalam proyek MoniChat :<ul><li>Programmer : Arachmadi Putra</li><li>Desain Skrip : Aurelia Noumi</li><li>Penulis Sampel : <code>14D616E646160244964716</code></li><li>Templat Website : Creative Tim</li><li>Wouᴉʞɐ : Monika After Story (MAS) Project</li></ul></h4>'});
-  }
   </script>
 </body>
 
