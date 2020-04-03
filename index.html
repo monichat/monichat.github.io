@@ -274,7 +274,10 @@ The above copyright notice and this permission notice shall be included in all c
 	}
 	s=localStorage.getItem('cimosoft.exe.monichat.basa');
 	var t = $.urlParam('cerita');
-	if(t != null){t = '?cerita='+t}else{t='';};
+	if(t != null){t = '?cerita='+t}else{
+	  var t = $.urlParam('anyar');
+	  if(t != null){t = '?anyar='+t}else{t='';};
+	};
     location.assign('index_'+s+'.html'+t);
   });
   </script>
