@@ -262,18 +262,20 @@ The above copyright notice and this permission notice shall be included in all c
 <script src="./assets/js/cookie.js" type="text/javascript"></script>   
   <script>
   function tentang(){
-    bootbox.alert({title:'Tentang MoniChat',message:'<h4 style="font-family:\'playtime\' !important;">The following name describes people who get involved to this MoniChat project:<ul><li>Programmer : Arachmadi Putra</li></ul></h4>'});
+    bootbox.alert({title:'About MoniChat',message:'<h4 style="font-family:\'playtime\' !important;">The following name describes people who get involved to this MoniChat project:<ul><li>Programmer : Arachmadi Putra</li></ul></h4>'});
   }
   $(document).ready(function(){
     var s = $.urlParam('basa');//localStorage.getItem('cimosoft.exe.monichat.basa');
 	if(!s){s=localStorage.getItem('cimosoft.exe.monichat.basa');};
-	goget();
+	
 	switch(s){
 		case '0' : localStorage.setItem('cimosoft.exe.monichat.basa','EN'); break;
 		default : localStorage.setItem('cimosoft.exe.monichat.basa','ID'); break;
 	}
 	s=localStorage.getItem('cimosoft.exe.monichat.basa');
-    location.assign('index_'+s+'.html');
+	var t = $.urlParam('cerita');
+	if(t != null){t = '?cerita='+t}else{t='';};
+    location.assign('index_'+s+'.html'+t);
   });
   </script>
 </body>
