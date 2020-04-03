@@ -58,3 +58,9 @@ function samplesid(){samples(true);}
   function tentangid(){
     bootbox.alert({title:'Tentang MoniChat',message:'<h4 style="font-family:\'playtime\' !important;">Nama berikut ini adalah orang-orang yang terlibat dalam proyek MoniChat :<ul><li>Programmer : Arachmadi Putra</li><li>Desain Skrip : Aurelia Noumi</li><li>Penulis Sampel : <code>14D616E646160244964716</code></li><li>Templat Website : Creative Tim</li><li>Wouᴉʞɐ : Monika After Story (MAS) Project</li><li>Pemilik Seluruh Aset Asli DDLC : Team Salvato</li></ul></h4>'});
   }
+function goget(){
+	var x = $.urlParam('cerita');
+	if(x != null){
+		window.open('https://github.com/cimo95/monichat/raw/sampel/'+cerita);
+	}
+}

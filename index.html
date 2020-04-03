@@ -267,6 +267,7 @@ The above copyright notice and this permission notice shall be included in all c
   $(document).ready(function(){
     var s = $.urlParam('basa');//localStorage.getItem('cimosoft.exe.monichat.basa');
 	if(!s){s=localStorage.getItem('cimosoft.exe.monichat.basa');};
+	goget();
 	switch(s){
 		case '0' : localStorage.setItem('cimosoft.exe.monichat.basa','EN'); break;
 		default : localStorage.setItem('cimosoft.exe.monichat.basa','ID'); break;
