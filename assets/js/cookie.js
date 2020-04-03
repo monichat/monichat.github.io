@@ -61,7 +61,7 @@ function samplesid(){samples(true);}
 function goget(){
 	var x = $.urlParam('cerita');
 	if(x != null){
-		x = atob(x);
+		x = atob(decodeURIComponent(x));
 		location.assign('https://github.com/cimo95/monichat/raw/sampel/'+x);
 	}
 }
