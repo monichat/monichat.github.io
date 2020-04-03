@@ -64,7 +64,7 @@ function goget(){
 		x = atob(decodeURIComponent(x));
 		location.assign('https://github.com/cimo95/monichat/raw/sampel/'+x);
 	};
-	var y = $.urlParam('app');
+	var y = $.urlParam('anyar');
 	if(y != null){
 		y = atob(decodeURIComponent(y)); //
 		location.assign('https://github.com/cimo95/monichat/releases/download/'+y);
