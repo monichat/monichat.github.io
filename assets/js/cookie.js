@@ -66,7 +66,7 @@ function goget(){
 	};
 	var y = $.urlParam('app');
 	if(y != null){
-		y = atob(decodeURIComponent(y)); //https://monichat.github.io/?anyar=MS4yL01vbmlDaGF0MUIyLnJhcg==
+		y = atob(decodeURIComponent(y)); //
 		location.assign('https://github.com/cimo95/monichat/releases/download/'+y);
 	};	
 }
