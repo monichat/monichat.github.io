@@ -27,9 +27,9 @@ function asset(id){
 	}
   }
   
-function samples(id){
-	var weba = ['Qikyuu_%20-%20Aku%20Bingung!.rar','Qikyuu_%20-%20Sampah%20!.mcx'];
-	var webt = ['Aku Bingung! (Oleh : Qikyuu_)','Sampah! (Oleh : Qikyuu_) (Use Ver 1.3 B)'];
+function samples(id){//https://github.com/cimo95/monichat/blob/sampel/
+	var weba = ['Qikyuu_%20-%20Aku%20Bingung!.rar','Qikyuu_%20-%20Sampah%20!.mcx','Arachmadi_-_Original%20DDES%20Spaceroom%20Monika.mcx'];
+	var webt = ['Aku Bingung! (Oleh : Qikyuu_)','Sampah! (Oleh : Qikyuu_) (Use Ver 1.3 B)','Original DDES Spaceroom Monika (Oleh : Arachmadi)'];
 	var btn = ['btn-primary','btn-info','btn-success','btn-warning','btn-danger','btn-rose',''];
 	var isi=''; 
 	var idx=0;
