@@ -75,7 +75,7 @@ function doget(id){
 	bootbox.hideAll();
 	window.open('https://github.com/cimo95/monichat/releases/download/2.0/MoniChat20B.'+x+'.rar');
 }
-function popget(){
+function popget(id){
 	var x = id?'<li>Gunakan WinRAR 5.0 untuk membuka</li><li>Kata sandi : ɾnsʇɯouᴉʞɐ<br><small>atau temukan di komentar WinRAR ketika kamu membuka ini</li>':'<li>Use WinRAR 5.0 to open this release</li><li>Password : ɾnsʇɯouᴉʞɐ<br><small>or find out the password inside WinRAR comment when you open this release</li>';
 	bootbox.alert({title:'Download MoniChat',message:'<div class="row"><div class="col-md-12" align=center><ul>'+x+'</ul></div></div><div class="row"><div class="col-md-6"><button class="btn btn-info btn-lg btn-block" onclick="doget(true);"><b>MoniChat ver 2.0</b><br>Bahasa Indonesia</button></div><div class="col-md-6"><button class="btn btn-danger btn-lg btn-block"  onclick="doget(false);"><b>MoniChat ver 2.0</b><br>English (international)</button></div></div>'});
 }
