@@ -69,4 +69,12 @@ function goget(){
 		y = atob(decodeURIComponent(y)); //
 		location.assign('https://github.com/cimo95/monichat/releases/download/'+y);
 	};	
+};
+function doget(id){
+	var x = id?'ID':'EN';
+	bootbox.hideAll();
+	window.open('https://github.com/cimo95/monichat/releases/download/2.0/MoniChat20B.'+x+'.rar');
+}
+function popget(){
+	bootbox.alert({title:'Download MoniChat',message:'<div class="row"><div class="col-md-6"><button class="btn btn-info btn-lg btn-block" onclick="doget(true);"><b>MoniChat ver 2.0</b><br>Bahasa Indonesia</button></div><div class="col-md-6"><button class="btn btn-danger btn-lg btn-block"  onclick="doget(false);"><b>MoniChat ver 2.0</b><br>English (international)</button></div></div>'});
 }
