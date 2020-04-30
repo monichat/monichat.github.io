@@ -29,7 +29,7 @@ function asset(id){
   
 function samples(id){//https://github.com/cimo95/monichat/blob/sampel/
 	var weba = ['Qikyuu_%20-%20Aku%20Bingung!.rar','Qikyuu_%20-%20Sampah%20!.mcx','Arachmadi_-_Original%20DDES%20Spaceroom%20Monika.mcx'];
-	var webt = ['Aku Bingung! (Oleh : Qikyuu_)','Sampah! (Oleh : Qikyuu_) (Use Ver 1.3 B)','Original DDES Spaceroom Monika (Oleh : Arachmadi)'];
+	var webt = ['Aku Bingung! (Oleh : Qikyuu_) (Indonesian)','Sampah! (Oleh : Qikyuu_) (Indonesian)','Original DDES Spaceroom Monika (Oleh : Arachmadi) (Indonesian)'];
 	var btn = ['btn-primary','btn-info','btn-success','btn-warning','btn-danger','btn-rose',''];
 	var isi=''; 
 	var idx=0;
@@ -56,7 +56,7 @@ function tentangen(){
 function assetid(){asset(true);}
 function samplesid(){samples(true);}
   function tentangid(){
-    bootbox.alert({title:'Tentang MoniChat',message:'<h4 style="font-family:\'playtime\' !important;">Nama berikut ini adalah orang-orang yang terlibat dalam proyek MoniChat :<ul><li>Programmer : Arachmadi Putra</li><li>Desain Skrip : Aurelia Noumi</li><li>Penulis Sampel : <code>14D616E646160244964716</code></li><li>Templat Website : Creative Tim</li><li>Wouᴉʞɐ : Monika After Story (MAS) Project</li><li>Pemilik Seluruh Aset Asli DDLC : Team Salvato</li></ul></h4>'});
+    bootbox.alert({title:'Tentang MoniChat',message:'<h4 style="font-family:\'playtime\' !important;">Nama berikut ini adalah orang-orang yang terlibat dalam proyek MoniChat :<ul><li>Programmer : Arachmadi Putra</li><li>Desain Skrip : Aurelia Noumi</li><li>Penulis Sampel : <code>Qikyuu_</code></li><li>Templat Website : Creative Tim</li><li>Wouᴉʞɐ : Monika After Story (MAS) Project</li><li>Pemilik Seluruh Aset Asli DDLC : Team Salvato</li></ul></h4>'});
   }
 function goget(){
 	var x = $.urlParam('cerita');
@@ -76,6 +76,6 @@ function doget(id){
 	window.open('https://github.com/cimo95/monichat/releases/download/2.0/MoniChat20B.'+x+'.rar');
 }
 function popget(id){
-	var x = id?'<li>Gunakan WinRAR 5.0 untuk membuka</li><li>Kata sandi : ɾnsʇɯouᴉʞɐ<br><small>atau temukan di komentar WinRAR ketika kamu membuka ini</li>':'<li>Use WinRAR 5.0 to open this release</li><li>Password : ɾnsʇɯouᴉʞɐ<br><small>or find out the password inside WinRAR comment<br>when you open this release</li>';
+	var x = id?'<li>Gunakan WinRAR 5.0 untuk membuka</li><li>Kata sandi : ɾnsʇɯouᴉʞɐ<br><small>atau temukan di komentar WinRAR ketika kamu membuka rilis ini</li>':'<li>Use WinRAR 5.0 to open this release</li><li>Password : ɾnsʇɯouᴉʞɐ<br><small>or find out the password inside WinRAR comment<br>when you open this release</li>';
 	bootbox.alert({title:'Download MoniChat',message:'<div class="row"><div class="col-md-12"><ul>'+x+'</ul></div></div><div class="row"><div class="col-md-6"><button class="btn btn-info btn-lg btn-block" onclick="doget(true);"><b>MoniChat ver 2.0</b><br>Bahasa Indonesia</button></div><div class="col-md-6"><button class="btn btn-danger btn-lg btn-block"  onclick="doget(false);"><b>MoniChat ver 2.0</b><br>English (international)</button></div></div>'});
 }
