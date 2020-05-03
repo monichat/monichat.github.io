@@ -28,8 +28,8 @@ function asset(id){
   }
   
 function samples(id){//https://github.com/cimo95/monichat/blob/sampel/
-	var weba = ['Qikyuu_%20-%20Aku%20Bingung!.rar','Qikyuu_%20-%20Sampah%20!.mcx','Arachmadi_-_Original%20DDES%20Spaceroom%20Monika.mcx'];
-	var webt = ['Aku Bingung! (Oleh : Qikyuu_) (Indonesian)','Sampah! (Oleh : Qikyuu_) (Indonesian)','Original DDES Spaceroom Monika (Oleh : Arachmadi) (Indonesian)'];
+	var weba = ['Qikyuu_%20-%20Aku%20Bingung!.rar','Qikyuu_%20-%20Sampah%20!.mcx','Arachmadi_-_Original%20DDES%20Spaceroom%20Monika.mcx','Deep...%20Press.%20(oleh%20Qikyuu_).mcx'];
+	var webt = ['Aku Bingung! (Oleh : Qikyuu_) (Indonesian)','Sampah! (Oleh : Qikyuu_) (Indonesian)','Original DDES Spaceroom Monika (Oleh : Arachmadi) (Indonesian)','Deep... Press. (Oleh : Qikyuu_) (Indonesian)'];
 	var btn = ['btn-primary','btn-info','btn-success','btn-warning','btn-danger','btn-rose',''];
 	var isi=''; 
 	var idx=0;
